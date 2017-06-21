@@ -23,6 +23,7 @@
   return false
 }
 function updateToDoItem () {
+    document.getElementById('toDoItems').innerHTML =''
     for (toDoIndex in toDoItems) {
        var toDoItem = toDoItems[toDoIndex] 
        document.getElementById('toDoItems').innerHTML += '<li>' +  toDoItem + '</li>'
